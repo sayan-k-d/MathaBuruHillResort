@@ -1,0 +1,65 @@
+.about {
+  position: relative;
+
+  .aboutUsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .aboutUsImage {
+      flex-basis: 40%;
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    .description {
+      flex-basis: 60%;
+      padding-left: 50px;
+      text-align: start;
+
+      p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .description p {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutUsContent {
+    flex-direction: column;
+    .aboutUsImage {
+      width: 100%;
+    }
+    .description {
+      width: 100%;
+      padding: 2em 0 !important;
+      p {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .aboutUsContent {
+    .description {
+      text-align: center !important;
+    }
+  }
+}
+@media (max-width: 409px) {
+  .aboutUsContent {
+    .description p {
+      font-size: 1.1rem !important;
+    }
+  }
+}

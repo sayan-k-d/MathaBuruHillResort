@@ -1,0 +1,84 @@
+.packages {
+  background-color: #f6f6f9;
+  position: relative;
+
+  .room-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      flex-direction: row !important;
+      margin: auto;
+      height: 230px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 8px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 1px 0px;
+      cursor: pointer;
+      overflow: hidden;
+      max-width: 600px;
+      width: 100%;
+      .image-area {
+        max-height: 100%;
+        img {
+          height: 100%;
+          margin: auto;
+          border-radius: 5px 5px 0 0;
+        }
+      }
+
+      .card-body {
+        color: #333333;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        max-height: 100%;
+
+        h5 {
+          font-size: 1.25rem;
+        }
+        .service-icons {
+          margin-bottom: 0;
+          img {
+            height: 30px;
+            width: 30px;
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .prev-button {
+    left: 0;
+  }
+
+  .next-button {
+    right: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .room-cards {
+    .card {
+      height: 250px !important;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .room-cards {
+    .card {
+      max-width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .room-cards {
+    .card {
+      height: auto !important;
+    }
+  }
+}

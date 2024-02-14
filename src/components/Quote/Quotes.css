@@ -1,0 +1,76 @@
+.aboutMatha {
+  display: flex;
+  flex-wrap: nowrap;
+  color: #ffffff;
+}
+.quote {
+  width: 70%;
+  margin: 8% 0;
+  padding: 0 5rem 0 1rem;
+  text-align: start;
+  h2 {
+    margin-bottom: 1em;
+  }
+  p {
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+.enquiryLink {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+  .enquiry {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .aboutMatha {
+    max-width: 1150px !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1086px) {
+  .enquiryLink button {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 1004px) {
+  .enquiryLink button {
+    font-size: small;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutMatha {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote {
+    width: 100%;
+    margin: 5% 0 0;
+    padding: 1rem;
+    text-align: center;
+  }
+  .enquiryLink {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 5%;
+    .enquiry {
+      width: 30%;
+    }
+  }
+}
+@media (max-width: 682px) {
+  .enquiryLink .enquiry {
+    width: auto;
+    padding: 0 3rem;
+  }
+}

@@ -1,0 +1,36 @@
+.gallery {
+  min-height: 10vh;
+  background-color: #ffffff;
+  position: relative;
+  .gallery-container {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+
+    .gallery-images {
+      display: flex;
+
+      img {
+        transition: transform 0.3s ease;
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-images {
+    img {
+      width: 330px !important;
+      height: 200px !important;
+    }
+  }
+}
